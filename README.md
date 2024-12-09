@@ -1,3 +1,11 @@
+<div align="center">
+	<img src="https://shields.io/badge/nestjs-%23E0234E.svg?style=for-the-badge&logo=nestjs&logoColor=white"> 
+  <img src="https://img.shields.io/badge/-Temporal.IO-0D1117?style=for-the-badge&logo=temporal&labelColor=0D1117&textColor=0D1117">
+	<br>
+	<br>
+	<br>
+</div>
+
 # Ezy Mailer Flow
 
 Ezy Mailer Flow é um projeto que utiliza o **[Temporal.io](https://temporal.io/)** para gerenciar o fluxo de envio de emails em lotes, garantindo confiabilidade e escalabilidade no processo.
@@ -119,6 +127,20 @@ curl -X POST http://localhost:3000/email-campaign/start \
 Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este projeto!
 
 ---
+
+## 💰 Support
+
+Not required but if you want... then by all means gib me ur cash please 💰 🔫
+
+[![BuyMeACoffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?style=for-the-badge&logo=buy-me-a-coffee&logoColor=black)](https://buymeacoffee.com/gabriel.dev/)
+
+## 👷‍♂️ Creator
+
+[![Contributors](https://contrib.rocks/image?repo=GabrielCSTR/ezy-mailer-flow)](https://github.com/GabrielCSTR)
+
+[![Twitter](https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=flat-square&logo=Twitter&logoColor=white)](https://twitter.com/gbrl_str)
+
+Made with 💖 and JavaScript!
 
 ## **Licença**
 
