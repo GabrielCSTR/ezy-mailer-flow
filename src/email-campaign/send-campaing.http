@@ -1,0 +1,6 @@
+POST http://localhost:3000/email-campaign/start
+Content-Type: application/json
+
+{
+  "templateName": "confirmation"
+}

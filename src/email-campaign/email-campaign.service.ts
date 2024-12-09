@@ -2,18 +2,20 @@ import { Injectable } from '@nestjs/common';
 import { WorkflowClient } from '@temporalio/client';
 import { Activities, Activity, InjectTemporalClient } from 'nestjs-temporal';
 import { emailCampaignWorkflow } from '../workflows/email-campaign.workflow';
+import { MailService } from 'src/mail/mail.service';
 
 @Activities()
 @Injectable()
 export class EmailCampaignService {
   constructor(
     @InjectTemporalClient() private readonly temporalClient: WorkflowClient,
+    private readonly mailerService: MailService,
   ) {}
 
-  async startCampaign(templateId: string, contactListId: string) {
+  async startCampaign(templateName: string) {
     const handle = await this.temporalClient.start(emailCampaignWorkflow, {
-      args: [templateId, contactListId],
-      workflowId: `email-campaign-${Date.now()}`,
+      args: [templateName],
+      workflowId: `email-campaign-${templateName}-${Date.now()}`,
       taskQueue: 'ezy-mailer-flow',
     });
 
@@ -21,10 +23,11 @@ export class EmailCampaignService {
   }
 
   @Activity()
-  async sendEmail(email: string, templateId: string): Promise<void> {
-    // Lógica para enviar o e-mail usando o template
-    // await send(email, templateId);
-    console.log(`Sending email to ${email} using template ${templateId}`);
-    
+  async sendEmail(
+    email: string,
+    templateName: string,
+  ): Promise<{ email: string; templateName: string; success: boolean }> {
+    await this.mailerService.sendEmail(email, templateName);
+    return { email: email, templateName: templateName, success: true };
   }
 }
