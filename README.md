@@ -8,14 +8,18 @@ Este projeto é capaz de:
 - Consultar os emails de clientes armazenados.
 - Gerenciar o envio dos emails em lotes, utilizando Temporal.io para orquestração.
 
-## 🚀 Tecnologias Utilizadas
+---
+
+## 🚀 **Tecnologias Utilizadas**
 
 - [Nestjs](https://nestjs.com/)
 - [Temporal.io](https://temporal.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Express.js](https://expressjs.com/)
 
-## 📂 Estrutura do Projeto
+---
+
+## 📂 **Estrutura do Projeto**
 
 ```plaintext
 📦ezy-mailer-flow/
@@ -30,7 +34,9 @@ Este projeto é capaz de:
 └── README.md              # Documentação do projeto
 ```
 
-## 📌 Funcionalidades
+---
+
+## 📌 **Funcionalidades**
 
 ### 1. Rota para Enviar Emails
 
@@ -50,7 +56,9 @@ Este projeto é capaz de:
 
 Os templates de email estão localizados no diretório `src/templates/` e são utilizados para personalizar as mensagens enviadas.
 
-## 🛠️ Instalação e Configuração
+---
+
+## 🛠️ **Instalação e Configuração**
 
 1. Clone este repositório:
 
@@ -83,7 +91,9 @@ Os templates de email estão localizados no diretório `src/templates/` e são u
    npm run start:dev
    ```
 
-## 🧪 Exemplos de Uso
+---
+
+## 🧪 **Exemplos de Uso**
 
 ### Exemplo de Requisição
 
@@ -102,12 +112,14 @@ curl -X POST http://localhost:3000/email-campaign/start \
 }
 ```
 
-## 🤝 Contribuição
+---
 
-### Sinta-se à vontade para contribuir com este projeto. Basta abrir uma issue ou enviar um pull request!
+## 🤝 **Contribuição**
 
-## 📄 Licença
+Sinta-se à vontade para abrir issues ou enviar pull requests para melhorar este projeto!
 
-### Este projeto está licenciado sob a MIT License.
+---
 
-💻 Desenvolvido por Gabriel Carlos
+## **Licença**
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
